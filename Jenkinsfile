@@ -7,6 +7,7 @@ pipeline {
         sh '''#!/bin/bash
 
 npm install'''
+        nodejs 'NodeJS 15.13.0'
       }
     }
 
