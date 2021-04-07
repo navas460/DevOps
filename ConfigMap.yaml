@@ -1,8 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: app-config
+  name: app-configmap
 data:
-  # ports value
-  backendPort: "5000"
-  frontedPort: "3000"
+  APP_NAME: DevOpsApp
+  APP_ENV: production
