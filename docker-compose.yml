@@ -10,6 +10,9 @@ services:
     image: "ex/app-backend"
     ports:
       - "5000:5000"
+    envFrom:
+    - configMapRef:
+        name: app-configmap
   frontend:
     build:
       context: ./client
