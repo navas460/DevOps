@@ -6,7 +6,7 @@ pipeline {
         git(url: 'https://github.com/jenkins-docs/simple-node-js-react-npm-app.git', branch: 'master')
         sh '''#!/bin/bash 
 
-npm config ls'''
+npm --version'''
         nodejs 'NodeJS 15.13.0'
       }
     }
