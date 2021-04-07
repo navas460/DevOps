@@ -7,7 +7,7 @@ pipeline {
         sh '''#!/bin/bash 
 
 npm config ls'''
-        nodejs 'NodeJS 15.13.0'
+      
       }
     }
 
