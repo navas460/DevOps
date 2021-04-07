@@ -9,7 +9,7 @@ services:
       dockerfile: ./Dockerfile
     image: "ex/app-backend"
     ports:
-      - "5000:5000"
+      - ${backendPort}:${backendPort}
     envFrom:
     - configMapRef:
         name: app-configmap
@@ -19,6 +19,6 @@ services:
       dockerfile: ./Dockerfile
     image: "ex/app-frontend"
     ports:
-      - "3000:3000"
+      - ${frontedPort}:${frontedPort}
     links:
       - "backend"
